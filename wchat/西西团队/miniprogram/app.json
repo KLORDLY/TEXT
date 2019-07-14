@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/team/team",
+    "pages/push/push",
+    "pages/my/my",
+    "pages/mydetail/mydetail",
+    "pages/idol/idol",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 TEAM",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+  },
+
+  "tabBar":{
+    "color":"#000000",
+    "selectedColor":"#FFC0CB",
+    "backgroundColor": "#ffffff",
+    "borderStyle":"white",
+    "list":[
+    {
+      "pagePath":"pages/team/team",
+      "text":"TEAM",
+      "iconPath":"images/teamBefore.png",
+      "selectedIconPath":"images/teamAfter.png"
+    },
+    {
+      "pagePath": "pages/push/push",
+      "text": "Y",
+      "iconPath": "images/pushBefore.png",
+      "selectedIconPath": "images/pushAfter.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "MY",
+      "iconPath": "images/myBefore.png",
+      "selectedIconPath": "images/myAfter.png"
+    }
+    
+    ],
+    "position":"bottom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

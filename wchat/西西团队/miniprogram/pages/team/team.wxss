@@ -1,0 +1,25 @@
+input{
+  width: 75%;
+  border: 1px solid rgb(13, 13, 14);
+  margin: 12px;
+  border-radius: 10rpx;
+}
+.placeholderclass{
+  margin: 0 0 0 5%;
+  font-size: 12px;
+}
+
+.searchicon{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 4px 0 0 70%;
+  position:absolute;
+  z-index: 2;
+}
+.mulu{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 2px 0 0 85%;
+  position:absolute;
+  z-index: 2;
+}

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "openapi": [
+      "customerServiceMessage.send"
+    ]
+  },
+
+  
+    "enable": true,
+    "callbacks": [
+      {
+        "msgType": 1,
+        "env": "z269571627-992fa3",
+        "functionName": "callback"
+      }
+    ]
+    
+}
+

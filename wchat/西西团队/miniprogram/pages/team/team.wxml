@@ -1,0 +1,10 @@
+<view class='teamTotal'>
+  <view class='teamSearch'>
+    <image  class='searchicon' bindtap='searchclick' src='/images/sou.png'></image>
+
+    <image class='mulu' bindtap='muluclick' src='/images/mulu.png'></image>
+    <input placeholder='搜索学院/技能/用户' type="text" placeholder-style='color:#ccc' placeholder-class='placeholderclass' maxlength='-1'bindinput='bindinput'></input>
+  </view>
+
+
+</view>

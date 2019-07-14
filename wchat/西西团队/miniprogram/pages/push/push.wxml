@@ -1,0 +1,34 @@
+<!--pages/push/push.wxml-->
+<view class='pushcontainer'>
+  <form>
+    <view class='pushcontent'>
+      <input placeholder='Title' class='pushtitle' placeholder-class='pushptitleclass'></input>
+
+      <textarea placeholder='发布内容' maxlength='-1' placeholder-class='pushptextclass'></textarea>
+
+    <image class='pushimage' src='{{item}}'></image>
+
+    		<button class="btn-upload" hover-clas="button-hover" >
+				<icon class="icon icon-jia"></icon>
+			</button>
+
+
+      <view class="tip">
+        *长按图片可删除
+      </view>
+
+
+      <view class="btngroup">
+        <button class="btnsumbit_b" hover-class="btn_a" form-type="submit">
+          发布
+        </button>
+
+        <button class="btnreset_b" hover-class="btn_a" form-type="reset">
+          重置
+        </button>
+      </view>
+
+    </view>
+  </form>
+
+</view>
