@@ -6,5 +6,11 @@
     <input placeholder='搜索学院/技能/用户' type="text" placeholder-style='color:#ccc' placeholder-class='placeholderclass' maxlength='-1'bindinput='bindinput'></input>
   </view>
 
+<view class='fastmesg'>
+  <scroll-view scroll-y style="height: 200px;">
+  
+  </scroll-view>
+
+</view>
 
 </view>

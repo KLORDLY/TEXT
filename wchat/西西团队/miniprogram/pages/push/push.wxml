@@ -2,15 +2,23 @@
 <view class='pushcontainer'>
   <form>
     <view class='pushcontent'>
-      <input placeholder='Title' class='pushtitle' placeholder-class='pushptitleclass'></input>
+      <input placeholder='Title' class='pushtitle' placeholder-class='pushptitleclass' bindinput='titlebind' value="{{forms}}"></input>
 
-      <textarea placeholder='发布内容' maxlength='-1' placeholder-class='pushptextclass'></textarea>
+      <textarea placeholder='发布内容' maxlength='-1' placeholder-class='pushptextclass' bindinput='textbind' value="{{forms}}"></textarea>
 
-    <image class='pushimage' src='{{item}}'></image>
-
-    		<button class="btn-upload" hover-clas="button-hover" >
+<view class='imgandbtn'>
+ 	<block wx:for="{{tempImg}}" wx:key="{{index}}tmpimg">
+   <view  class='pushimage' bindlongpress="deleteImage" data-index="{{index}}">
+	 	  <image class='pushimage' src='{{item}}' mode='aspectFill' ></image>
+    </view>
+	</block>
+  
+      <button class="btn-upload" hover-clas="button-hover" bindtap="uploadimg">
 				<icon class="icon icon-jia"></icon>
-			</button>
+	</button>
+</view>
+
+
 
 
       <view class="tip">
@@ -19,11 +27,11 @@
 
 
       <view class="btngroup">
-        <button class="btnsumbit_b" hover-class="btn_a" form-type="submit">
+        <button class="btnsumbit_b" hover-class="btn_a" form-type="submit" bindtap='clicksubmit'>
           发布
         </button>
 
-        <button class="btnreset_b" hover-class="btn_a" form-type="reset">
+        <button class="btnreset_b" hover-class="btn_a" form-type="reset" bindtap='clickreset'>
           重置
         </button>
       </view>

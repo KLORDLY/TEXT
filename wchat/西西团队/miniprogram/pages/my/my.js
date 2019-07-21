@@ -12,7 +12,8 @@ Page({
     requestResult: '',
     usernametip: "点击头像登录",
     currentTab: 0,
-    tabArray: ["发布", "介绍", "收藏"]
+    tabArray: ["发布", "介绍", "收藏"],
+    contentArray:[]
   },
   //事件处理函数
   bindChange: function (e) {

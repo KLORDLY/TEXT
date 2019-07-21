@@ -42,6 +42,7 @@ textarea{
 }
 
 .pushimage{
+      z-index: 2;
       width: 128rpx;    
       height: 128rpx;
       display: inline-block;
@@ -58,7 +59,6 @@ textarea{
       height: 128rpx;
       text-align: center;
       line-height: 128rpx;
-      margin-left: 70%;
       padding: 0;
       color: #fafafa;
       -webkit-transition: all .4s;
@@ -68,6 +68,9 @@ textarea{
       transition: all .5s; 
   }
 
+.imgandbtn{
+  display: inline-block;
+}
 
 .button-hover {
       background-color: rgb(201, 201, 201);
@@ -109,5 +112,4 @@ font-size: 30rpx;
   color: white;
   background-color: rgb(201, 201, 201);
 }
-
 

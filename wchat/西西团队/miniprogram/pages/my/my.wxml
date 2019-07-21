@@ -22,17 +22,21 @@
 
 
     <view class='threeshowcontent'>
-    
-    
-  <view class="nav-tabs">
-      <view class="tab-list  {{currentTab == idx?'active':'default'}}" wx:for="{{tabArray}}" wx:for-index="idx" wx:for-item="itemName" data-current="{{idx}}" bindtap="swichNav">{{itemName}}</view>
-  </view>
-  <swiper current="{{currentTab}}" class="tab-content" duration="300"  bindchange="bindChange">  
-  <swiper-item wx:for="{{tabArray}}" wx:for-index="idx" wx:for-item="itemName" class="">
-      <view class="">{{itemName}}</view> 
-  </swiper-item>
-  </swiper> 
-    
+
+      <view class="nav-tabs">
+
+        <view class="tab-list  {{currentTab == idx?'active':'default'}}" wx:for="{{tabArray}}" wx:for-index="idx" wx:for-item="itemName" data-current="{{idx}}" bindtap="swichNav">{{itemName}}
+        </view>
+
+      </view>
+
+      <swiper current="{{currentTab}}" class="tab-content" duration="300" bindchange="bindChange">
+        <swiper-item wx:for="{{contentArray}}" wx:for-index="idx" wx:for-item="itemName" class="">
+          <view class="">{{itemName}}</view>
+        </swiper-item>
+
+      </swiper>
+
     </view>
 
   </view>
